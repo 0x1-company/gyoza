@@ -1,0 +1,17 @@
+{
+    "name": "Gyoza",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "a extention for Google Chrome",
+    "browser_action": {
+		"default_title": "Gyoza",
+        "default_popup": "index.html"
+	},
+    "permissions": [
+        "tab",
+        "activeTab",
+        "https://{subdomain}.aspect.co/asset/*"
+    ],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+
+}
